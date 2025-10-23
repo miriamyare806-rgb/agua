@@ -11,52 +11,46 @@ const zoneListEl = document.getElementById('zoneList');
 
 const zonas = [
   {
-    nombre: "Centro de Zinacantepec",
-    coords: [19.285, -99.735],
-    descripcion: "Zona central donde se ubica el Palacio Municipal y la Parroquia de San Miguel Arcángel.",
-    tipo: "Centro histórico"
-  },
-  {
     nombre: "Museo Virreinal de Zinacantepec",
-    coords: [19.2933, -99.7291],
-    descripcion: "Antiguo convento franciscano del siglo XVI con arte y arquitectura colonial.",
+    coords: [19.2831, -99.7349],
+    descripcion: "La zona cercana al museo presenta servicio intermitente de agua, con cortes ocasionales que se atienden mediante pipas municipales.",
     tipo: "Museo"
-  },
+},
+
   {
     nombre: "San Luis Mextepec",
     coords: [19.2985, -99.7351],
-    descripcion: "Una de las comunidades más pobladas y con reportes frecuentes de desabasto, especialmente en temporada de estiaje.",
+    descripcion: "Comunidad con escasez frecuente de agua; muchas familias dependen de pipas, especialmente durante los meses de estiaje.",
     tipo: "Comunidad"
   },
   {
-    nombre: "San Cristóbal Tecolit",
-    coords: [19.2667, -99.7457],
-    descripcion: "Comunidad que suele presentar cortes prolongados de servicio.",
-    tipo: "Comunidad"
+  nombre: "San Cristóbal Tecolit",
+  coords: [19.2719, -99.7478],
+  descripcion: "Comunidad que suele presentar cortes prolongados de servicio.",
+  tipo: "Comunidad"
   },
   {
     nombre: "San Juan de las Huertas",
     coords: [19.2464, -99.7606],
-    descripcion: "El crecimiento desordenado ha superado la capacidad de la infraestructura hídrica.",
+    descripcion: "El suministro de agua es irregular; en épocas secas muchas viviendas se quedan sin servicio por varios días consecutivos.",
     tipo: "Comunidad"
   },
   {
     nombre: "Santa María del Monte",
     coords: [19.28705, -99.82689],
-    descripcion: "Comunidad con alta marginación y dificultades para acceder a agua entubada de calidad.",
+    descripcion: "Comunidad con alta marginación y graves problemas de escasez; gran parte de los hogares depende del reparto de agua por pipas.",
     tipo: "Comunidad"
   },
   {
     nombre: "San Antonio Acahualco",
     coords: [19.27667, -99.77361],
-    descripcion: "Comunidad que experimenta problemas recurrentes en el abastecimiento.",
+    descripcion: "Frecuentes problemas de abasto; el suministro llega con baja presión y los vecinos dependen del llenado por pipas varias veces al mes.",
     tipo: "Comunidad"
   },
-  
   {
     nombre: "San Miguel Zinacantepec (Cabecera Municipal)",
-    coords: [19.2905, -99.7288],
-    descripcion: "La cabecera municipal de Zinacantepec, donde también se registran problemas recurrentes en el suministro de agua.",
+    coords: [19.285, -99.735],
+    descripcion: "Aunque cuenta con red de distribución, la cabecera municipal también enfrenta cortes periódicos y apoyo con pipas en zonas altas.",
     tipo: "Cabecera municipal"
   }
 ];
@@ -134,4 +128,5 @@ async function cargarMunicipio(nombre) {
 }
 
 cargarMunicipio('Zinacantepec, Estado de México');
+
 statusEl.textContent = "Mapa interactivo cargado correctamente.";
