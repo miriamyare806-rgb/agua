@@ -1,0 +1,16 @@
+{
+  "name": "Gotitas de Vida - Zinacantepec",
+  "short_name": "GotitasVida",
+  "description": "Sistema de captación de agua pluvial en Zinacantepec",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2E86AB",
+  "theme_color": "#2E86AB",
+  "icons": [
+    {
+      "src": "imagenes/logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    }
+  ]
+}

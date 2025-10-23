@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Calculadora de captación pluvial para Zinacantepec: calcula cuánta agua puedes recolectar según tu techo y precipitación local">
+  <meta name="keywords" content="calculadora agua pluvial, captación lluvia cálculo, sistema techo, precipitación Zinacantepec, ahorro agua">
+  <meta name="author" content="Equipo de: Itzelt, Maricruz y Miriam">
+  <meta name="robots" content="index, follow">
+  <title>Calculadora de Captación Pluvial</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="imagenes/fabicon-agua.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="js/menu.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <img src="imagenes/logo.jpg" alt="Logo del proyecto Gotitas de Vida" width="90">
+    </a>
+    <h1>Gotitas de Vida en Zinacantepec</h1>
+
+    <button class="menu-hamburguesa">&#9776;</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="calculadora" role="main">
+    <section class="contenedor-calculadora">
+      <h2>Calculadora de Captación Pluvial</h2>
+      <p>Descubre cuánta agua podrías recolectar con tu techo. Ingresa los siguientes datos:</p>
+
+      <form id="formulario">
+        <label for="area">Área del techo (m²):</label>
+        <input type="number" id="area" >
+
+        <label for="precipitacion">Precipitación anual (mm):</label>
+        <input type="number" id="precipitacion" >
+
+        <label for="material">Material del techo:</label>
+        <select id="material">
+          <option value="">Seleccione</option>
+          <option value="lamina">Lámina galvanizada</option>
+          <option value="concreto">Concreto</option>
+          <option value="teja">Teja</option>
+        </select>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="text" id="correo" placeholder="ejemplo@correo.com">
+
+        <button type="submit" class="boton-primario">Calcular</button>
+      </form>
+
+     <div id="resultado" class="resultado">
+        <button id="borrarHistorial">🗑 Borrar historial</button>
+     </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="Pfooter">&copy; 2025 Gotitas de Vida en Zinacantepec — Proyecto de Captación de Agua</p>
+  </footer>
+
+  <script src="js/calculadora.js"></script>
+</body>
+</html>

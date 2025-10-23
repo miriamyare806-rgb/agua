@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mapa interactivo de Zinacantepec: ubicación de proyectos de captación de agua, comunidades beneficiadas y situación hídrica por zona">
+  <meta name="keywords" content="mapa Zinacantepec, captación agua comunidades, proyectos ubicación, situación hídrica municipal, zonas agua">
+  <meta name="author" content="Equipo de: Itzelt, Maricruz y Miriam">
+  <meta name="robots" content="index, follow">
+  <title>Mapa Interactivo - Gotitas de Vida en Zinacantepec</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="imagenes/fabicon-agua.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="js/menu.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <img src="imagenes/logo.jpg" alt="Logo del proyecto Gotitas de Vida" width="90">
+    </a>
+    <h1>Gotitas de Vida en Zinacantepec</h1>
+
+    <button class="menu-hamburguesa">&#9776;</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="calculadora.html">Calculadora</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main role="main">
+  <section id="hero-mapa">
+    <h2>Mapa Interactivo de Zinacantepec</h2>
+    <p>Explora las comunidades donde estamos implementando sistemas de captación de agua y conoce la situación hídrica de cada zona</p>
+  </section>
+
+  <section id="contenedor-mapa-completo">
+    <div class="mapa-panel">
+      <div id="map"></div>
+    </div>
+    
+    <aside class="panel-informacion">
+      <div class="info-mapa">
+        <h3>Información de la Zona</h3>
+        <p id="status">Cargando datos del municipio...</p>
+        <div id="meta"></div>
+      </div>
+      <div class="lista-comunidades">
+        <h3>Comunidades</h3>
+        <div class="zone-list" id="zoneList"></div>
+      </div>
+    </aside>
+  </section>
+  </main>
+  <footer>
+    <p class="Pfooter">&copy; Gotitas de Vida en Zinacantepec — Proyecto de Captación de Agua</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/mapa.js"></script>
+</body>
+</html>
